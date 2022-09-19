@@ -1,9 +1,18 @@
 package com.github.p2m2.api
 
+import scala.util.{Failure, Success, Try}
+
 
 case object PubChemPugRestAPI {
   val baseUrl : String = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
-  def get(request: String): String = scala.io.Source.fromURL(PubChemPugRestAPI.baseUrl + "/" + request).mkString.trim
+
+  def send(request: String): String = scala.io.Source.fromURL(PubChemPugRestAPI.baseUrl + "/" + request).mkString.trim
+  def get(request: String, trySend: Int=5): String =
+    Try(send(request)) match {
+      case Success(r) => r
+      case Failure(_) if trySend >= 0 => get(request,trySend-1)
+      case Failure(e) => throw e
+  }
   def compound =  CompoundDomainNamespacePubChemPugRest("compound")
 }
 
