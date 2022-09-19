@@ -101,7 +101,6 @@ jobs:
           command: |
             cat /dev/null | sbt clean coverage Test/test coverageReport
             bash <(curl -s https://codecov.io/bash)
-            bash <(curl -Ls https://coverage.codacy.com/get.sh) report
 
       - store_artifacts:
           path: target/test-reports
