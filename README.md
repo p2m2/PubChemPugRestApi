@@ -1,8 +1,7 @@
 # PubChemPugRestApi
 [![CircleCI](https://circleci.com/gh/p2m2/PubChemPugRestApi.svg?style=shield)](https://circleci.com/gh/p2m2/PubChemPugRestApi)
 [![codecov](https://codecov.io/gh/p2m2/PubChemPugRestApi/branch/develop/graph/badge.svg)](https://codecov.io/gh/p2m2/p2m2)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9db61bd9732740c79a39de678c6e5246)](https://www.codacy.com/gh/p2m2/PubChemPugRestApi/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=p2m2/PubChemPugRestApi&amp;utm_campaign=Badge_Grade)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad53780a9a08423380f31fe3fdb5ff5e)](https://app.codacy.com/gh/p2m2/PubChemPugRestApi?utm_source=github.com&utm_medium=referral&utm_content=p2m2/PubChemPugRestApi&utm_campaign=Badge_Grade_Settings)
 simple interface to reach https://pubchem.ncbi.nlm.nih.gov/rest/pug
 
 ``` 
