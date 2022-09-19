@@ -45,5 +45,6 @@ object PubChemPugRestAPITest extends TestSuite {
     test("getCompoundsWithName") {
       PubChemRequest.getCompoundsWithName("Glucoalyssin")
     }
+
   }
 }

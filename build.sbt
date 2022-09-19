@@ -1,6 +1,6 @@
 name := "PubChemPugRestApi"
 version := "0.1"
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.7"
 organization := "com.github.p2m2"
 organizationName := "p2m2"
 organizationHomepage := Some(url("https://www6.inrae.fr/p2m2"))
@@ -47,9 +47,9 @@ publishMavenStyle := true
 
 
 libraryDependencies ++= Seq(
-  "com.lihaoyi" %% "utest" % "0.7.10" % "test",
-  "org.scala-lang.modules" %% "scala-xml" % "2.0.0",
-  "com.lihaoyi" %% "upickle" % "1.3.15"
+  "com.lihaoyi" %% "utest" % "0.8.1" % "test",
+  "org.scala-lang.modules" %% "scala-xml" % "2.1.0",
+  "com.lihaoyi" %% "upickle" % "2.0.0"
 )
 
 testFrameworks += new TestFramework("utest.runner.Framework")

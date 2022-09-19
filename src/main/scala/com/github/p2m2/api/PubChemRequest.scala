@@ -32,7 +32,7 @@ object CompoundPubChem{
 
 case object PubChemRequest {
   //https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest$_Toc494865567
-  val listProperty = List(
+  val listProperty: List[String] = List(
     "Title","MolecularFormula","CanonicalSMILES","IsomericSMILES","InChI","InChIKey","IUPACName","ExactMass","MonoisotopicMass","Charge"
   )
 
@@ -79,4 +79,5 @@ case object PubChemRequest {
     val results : ResultsPubChemPugRestAPI = buildCompoundsWithJson(data)
     results.PropertyTable.Properties
   }
+
 }
